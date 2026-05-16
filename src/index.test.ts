@@ -25,6 +25,7 @@ import * as chokidar from './index.js';
 const TEST_TIMEOUT = 32000; // ms
 const imetaurl = import.meta.url;
 const FIXTURES_PATH = sp.join(tmpdir(), 'chokidar-' + time());
+console.log(FIXTURES_PATH);
 const WATCHERS: chokidar.FSWatcher[] = [];
 let testId = 0;
 let currentDir: string;
